@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import '../App.css';
 
 function CountryById ({match}) {
 
@@ -16,7 +17,7 @@ function CountryById ({match}) {
 
     };
     return (
-      <div>
+      <div className="component">
         <h1>Country Details</h1>
         <h2>{country.name}({country.native})</h2>
         <h3>Currency : {country.currency}</h3>

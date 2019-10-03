@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import '../App.css';
 
 function Countries() {
 
@@ -18,7 +19,7 @@ function Countries() {
         setCountries(json);
     };
     return (
-      <div>
+      <div className="component">
         <h2>Here is country list</h2>
         {countries.map(country => (
             <div key={country.code} className="col s12 m4">
